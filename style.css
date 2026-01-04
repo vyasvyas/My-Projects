@@ -1,0 +1,275 @@
+/* =========================================
+   1. Global Reset & Body Styling
+========================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #FFC4C4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    color: black;
+}
+
+/* =========================================
+   2. Logo Styling (like your 2nd sample)
+========================================= */
+.login-logo {
+    width: 145px;
+    height: auto;
+    border-radius: 12px;
+    padding: 0;
+    object-fit: contain;
+    position: absolute;
+    left: 50px;
+    top: 20px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.12);
+}
+
+/* =========================================
+   3. Container (general form container)
+========================================= */
+.container {
+    background-color: #F4F8D3;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+/* =========================================
+   4. Input Fields
+========================================= */
+.input-field {
+    width: 100%;
+    padding: 14px 18px;
+    margin: 10px 0;
+    font-size: 17px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+/* =========================================
+   5. Submit Buttons
+========================================= */
+.btn {
+    padding: 14px 18px;
+    margin-top: 25px;
+    width: 100%;
+    background-color: #00796b;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #004d40;
+    transform: scale(1.03);
+}
+
+.btn:active {
+    background-color: #00332d;
+    transform: scale(0.98);
+}
+
+/* =========================================
+   6. Titles / Headers
+========================================= */
+.title {
+    color: #850E35;
+    margin-bottom: 25px;
+    font-size: 24px;
+}
+
+.form-header {
+    margin-bottom: 20px;
+    color: green;
+    font-size: 24px;
+}
+
+/* =========================================
+   7. Auth Forms (Login / Signup)
+========================================= */
+.auth-form {
+    text-align: center;
+    box-sizing: border-box;
+    background-color: white;
+    padding: 60px 80px;
+    border-radius: 15px;
+    border: black;
+    box-shadow: 0 0 10px #ccc;
+    width: 300%;
+    max-width: 500px;
+    margin: 40px auto;
+}
+
+.auth-form h2 {
+    text-align: center;
+    color: green;
+    margin-bottom: 25px;
+}
+
+.auth-form input[type="text"],
+.auth-form input[type="email"],
+.auth-form input[type="password"] {
+    width: 100%;
+    padding: 15px 0;
+    font-size: 16px;
+    margin-bottom: 18px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.auth-form button {
+    background-color: #5D866C;
+    color: black;
+    padding: 12px 0;
+    width: 100%;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Second Auth Container Layout */
+.auth-form {
+    width: 420px;
+    margin: 150px auto;
+    background: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.auth-form input {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+/* =========================================
+   8. Images (Inside result page)
+========================================= */
+.result-image {
+    margin: 20px auto;
+    max-width: 250px;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    display: block;
+}
+
+.result-container .logo {
+    width: 120px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+/* =========================================
+   9. Result Page Styling
+========================================= */
+.result-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 140px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+.result-title {
+    font-size: 30px;
+    font-weight: bold;
+    color: darkgreen;
+    margin-bottom: 20px;
+}
+/* English result crop name */
+.result-crop {
+    font-size: 24px;
+    text-align : center;
+    color: #2e7d32;
+    margin-bottom: 10px;
+}
+
+/* Gujarati name */
+.result-guj {
+    font-size: 22px;
+    text-align : center;
+    color: #1565c0;
+    margin-bottom: 20px;
+}
+
+
+
+/* Table */
+.table-container {
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid black;
+}
+
+th {
+    background: lightgreen;
+}
+
+td {
+    background: white;
+}
+
+/* Back Button */
+.btn {
+    display: inline-block;
+    text-align: center;
+    padding: 12px 15px;
+    background:  #1e4e80;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 18px;
+    transition: 0.3s;
+    margin-bottom: auto;
+}
+
+
+
+.btn:hover {
+    background: #1e4e80;
+}
+/* Result Page Image Styling */
+.result-image {
+    width: 750px;           /* resize without losing quality */
+    height: 200px;
+    display: block;
+    margin: 20px auto;      /* center image */
+    border-radius: 15px;    /* smooth rounded corners */
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.2); /* soft shadow */
+    padding: 5px;
+    background: #fff;       /* white border look */
+}

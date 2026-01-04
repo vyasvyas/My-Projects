@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Signup</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <img src="{{ url_for('static', filename='images/LOGO-code.png') }}" class="login-logo" alt="logos" >
+       <form class="auth-form h2"  method="post">
+         <h2 class="form-header">Sign up - AgroGenius</h2>
+
+        <input type="text" name="name" placeholder="Full Name" required><br>
+        <input type="email" name="email" placeholder="Email" required><br>
+        <input type="password" name="password" placeholder="Password" required><br>
+        <button  class="auth-form" type="submit">Signup</button>
+        <p>Already have an account? <a href="{{ url_for('login') }}">Login here</a></p>
+        </form>
+</body>
+</html>

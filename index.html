@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Crop Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+
+</head>
+<body>
+       <img src="{{ url_for('static', filename='images/LOGO-code.png') }}" class="login-logo" alt="logos" >
+       <div class="container">
+             <h2 class="title">Crop Recommendation System</h2>
+             <form method="POST" action="/predict" class="form">
+            <input type="number" name="N" placeholder="Nitrogen (N)" step="0.1" required class="input-field">
+            <input type="number" name="P" placeholder="Phosphorous (P)" step="0.1" required class="input-field">
+            <input type="number" name="K" placeholder="Potassium (K)" step="0.1" required class="input-field">
+            <input type="number" name="temperature" placeholder="Temperature" step="0.1" required class="input-field">
+            <input type="number" name="humidity" placeholder="Humidity" step="0.1" required class="input-field">
+            <input type="number" name="ph" placeholder="pH Value" step="0.1" required class="input-field">
+            <input type="number" name="rainfall" placeholder="Rainfall (mm)" step="0.1" required class="input-field">
+            <button type="submit" class="btn">Predict Crop</button><br><br>
+
+            <a href="{{ url_for('logout') }}"  class ='btn'>Logout</a>
+        </form>
+     </div>
+</body>
+</html>

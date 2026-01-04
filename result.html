@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+</head>
+<body>
+     <img src="{{ url_for('static', filename='images/LOGO-code.png') }}" class="login-logo" alt="logos" >
+    <div class="result-container">
+        <h2 class="result-title">Recommended Crop</h2>
+
+        <!-- English Name -->
+        <p class="result-crop"><strong>{{ crop }}</strong></p>
+
+        <!-- Gujarati Name -->
+        <p class="result-guj"><strong>{{ guj_name }}</strong></p>
+
+ <img src="{{ url_for('static', filename='images/crops/' ~ image_name ~ '.jpg') }}" alt="{{ crop }} image" class="result-image">
+
+
+        <a href="/" class="btn">🔁 Again Prediction</a>
+    </div>
+</body>
+
+    </div>
+</body>
+</html>
